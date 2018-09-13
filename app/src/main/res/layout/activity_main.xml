@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:onClick="AddAdnroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Android"
+        android:id="@+id/btnAddAndroid"/>
+    <Button
+        android:onClick="AddIOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add IOS"
+        android:id="@+id/btnAddIOS"
+        android:layout_toRightOf="@id/btnAddAndroid"/>
+    <Button
+        android:onClick="ReplaceAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Replace Android"
+        android:id="@+id/btnReplaceAndroid"
+        android:layout_below="@id/btnAddAndroid"/>
+    <Button
+        android:onClick="ReplaceIOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Replace IOS"
+        android:id="@+id/btnReplaceIOS"
+        android:layout_toRightOf="@id/btnReplaceAndroid"
+        android:layout_below="@id/btnAddAndroid"/>
+    <Button
+        android:onClick="RemoveAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Android"
+        android:id="@+id/btnRemoveAndroid"
+        android:layout_below="@id/btnReplaceAndroid"/>
+    <Button
+        android:onClick="RemoveIOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove IOS"
+        android:id="@+id/btnRemoveIOS"
+        android:layout_toRightOf="@id/btnReplaceAndroid"
+        android:layout_below="@id/btnReplaceAndroid"/>
+    <Button
+        android:onClick="PopBackStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPopBackStack"
+        android:layout_below="@id/btnRemoveAndroid"
+        android:text="Pop Back Stack"/>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnPopBackStack">
+
+    </RelativeLayout>
+
+</RelativeLayout>
